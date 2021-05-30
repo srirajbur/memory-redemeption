@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Navbar = () => {
   return (
     <nav>
-      <div>Memory Redemption</div>
+      <div style={{ fontSize: '3rem' }}>Memory Redemption</div>
     </nav>
   );
 };

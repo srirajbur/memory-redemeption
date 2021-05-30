@@ -1,0 +1,24 @@
+.Cards {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+img {
+  margin: 5px;
+  max-width: 265px;
+  max-height: 265px;
+}
+
+.card {
+  color: white;
+  width: 280px;
+  height: 320px;
+  overflow: hidden;
+  background-color: black;
+  font-size: 23px;
+  font-family: 'Galada';
+  margin: 10px;
+}

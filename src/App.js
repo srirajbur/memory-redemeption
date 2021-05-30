@@ -57,11 +57,13 @@ function App() {
 
       return array;
     }
-
-    setCharacters(shuffle(characters));
+    //best score
     if (currentScore > bestScore) {
       setBestScore(currentScore);
     }
+
+    //shuffle characters
+    setCharacters(shuffle(characters));
   });
 
   function findCharObj(id) {
@@ -73,20 +75,13 @@ function App() {
   }
 
   function handleClick(e) {
-    //find current character obj
-    //check if name is included in clickedChars? currentscore = 0 && clickedArray = []: currentscore + 1
-
-    console.log(e.target.parentElement.id);
-    console.log(e.target);
-    const currentChar = findCharObj(e.target.parentElement.id);
-    console.log(currentChar);
+    const currentChar = findCharObj(e.target.id);
     if (clickedChars.includes(currentChar.name)) {
       setScore(0);
       setClickChars([]);
     } else {
       setScore(currentScore + 1);
       clickedChars.push(currentChar.name);
-      console.log(clickedChars);
     }
   }
 

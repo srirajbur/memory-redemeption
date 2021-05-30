@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 
 const ScoreBoard = (props) => {
   const { currentScore, bestScore } = props;
+  const styles = {
+    textAlign: 'right',
+    fontSize: '2rem',
+    marginRight: '2rem',
+  };
 
   return (
-    <div className="scoreboard">
+    <div className="scoreboard" style={styles}>
       <div>Current Score: {currentScore}</div>
       <div>Best Score: {bestScore}</div>
     </div>

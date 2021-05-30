@@ -1,8 +1,10 @@
+import './Cards.css';
+
 const Cards = (props) => {
   const { characters, handleClick } = props;
 
   return (
-    <div className="cards">
+    <div className="Cards">
       {characters.map((character) => {
         return (
           <Card
@@ -22,12 +24,11 @@ const Card = (props) => {
   const { name, picture, id, handleClick } = props;
 
   return (
-    //add onClick, key, and id
     <div className="card" id={id} onClick={handleClick}>
-      <div>
-        <img src={picture} />
+      <div className="card-img" id={id}>
+        <img src={picture} id={id} />
       </div>
-      <div>{name}</div>
+      <div id={id}>{name}</div>
     </div>
   );
 };
