@@ -10,7 +10,7 @@ const ScoreBoard = (props) => {
 
   return (
     <div className="scoreboard" style={styles}>
-      <div>Current Score: {currentScore}</div>
+      <div>Score: {currentScore}</div>
       <div>Best Score: {bestScore}</div>
     </div>
   );

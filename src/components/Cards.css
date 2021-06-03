@@ -21,4 +21,5 @@ img {
   font-size: 23px;
   font-family: 'Galada';
   margin: 10px;
+  cursor: pointer;
 }
