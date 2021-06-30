@@ -23,12 +23,16 @@ const Cards = (props) => {
 const Card = (props) => {
   const { name, img, id, handleClick } = props;
 
+  function capitalize(string) {
+    return string[0].toUpperCase() + string.slice(1);
+  }
+
   return (
     <div className="card" id={id} onClick={handleClick}>
       <div className="card-img" id={id}>
         <img src={window.location.origin + `/assets/${img}`} id={id} />
       </div>
-      <div id={id}>{name}</div>
+      <div id={id}>{capitalize(name)}</div>
     </div>
   );
 };

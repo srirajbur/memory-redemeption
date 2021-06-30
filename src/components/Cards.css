@@ -2,8 +2,8 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 3rem;
+  justify-content: space-around;
+  margin: 3rem auto 0 auto;
 }
 
 img {
@@ -22,4 +22,5 @@ img {
   font-family: 'Galada';
   margin: 10px;
   cursor: pointer;
+  padding-top: 1rem;
 }
