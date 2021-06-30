@@ -11,7 +11,7 @@ const Cards = (props) => {
             key={character.id}
             id={character.id}
             name={character.name}
-            picture={character.picture}
+            img={character.img}
             handleClick={handleClick}
           />
         );
@@ -21,12 +21,12 @@ const Cards = (props) => {
 };
 
 const Card = (props) => {
-  const { name, picture, id, handleClick } = props;
+  const { name, img, id, handleClick } = props;
 
   return (
     <div className="card" id={id} onClick={handleClick}>
       <div className="card-img" id={id}>
-        <img src={picture} id={id} />
+        <img src={window.location.origin + `/assets/${img}`} id={id} />
       </div>
       <div id={id}>{name}</div>
     </div>

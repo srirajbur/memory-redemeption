@@ -1,37 +1,12 @@
-import './App.css';
 import React, { useEffect, useState } from 'react';
-import { nanoid } from 'nanoid';
+import './App.css';
+import characterCards from './characterCards';
+import Cards from './components/Cards';
 import Navbar from './components/Navbar';
 import ScoreBoard from './components/ScoreBoard';
-import Cards from './components/Cards';
-import arthur from './assets/arthur.png';
-import charles from './assets/charles.png';
-import dutch from './assets/dutch.png';
-import hosea from './assets/hosea.png';
-import john from './assets/john.png';
-import josiah from './assets/josiah.png';
-import lenny from './assets/lenny.png';
-import micah from './assets/micah.png';
-import sadie from './assets/sadie.png';
-import sean from './assets/sean.png';
-import tilly from './assets/tilly.png';
-import uncle from './assets/uncle.png';
 
 function App() {
-  const [characters, setCharacters] = useState([
-    { name: 'arthur', picture: arthur, id: nanoid() },
-    { name: 'charles', picture: charles, id: nanoid() },
-    { name: 'dutch', picture: dutch, id: nanoid() },
-    { name: 'hosea', picture: hosea, id: nanoid() },
-    { name: 'john', picture: john, id: nanoid() },
-    { name: 'josiah', picture: josiah, id: nanoid() },
-    { name: 'lenny', picture: lenny, id: nanoid() },
-    { name: 'micah', picture: micah, id: nanoid() },
-    { name: 'sadie', picture: sadie, id: nanoid() },
-    { name: 'sean', picture: sean, id: nanoid() },
-    { name: 'tilly', picture: tilly, id: nanoid() },
-    { name: 'uncle', picture: uncle, id: nanoid() },
-  ]);
+  const [characters, setCharacters] = useState(characterCards);
 
   const [currentScore, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
@@ -84,6 +59,7 @@ function App() {
       clickedChars.push(currentChar.name);
     }
   }
+  // console.log(characters, characterCards);
 
   return (
     <div className="App">
