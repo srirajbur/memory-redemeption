@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Creepster', cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+nav > h2 {
+  font-size: 4rem;
+  letter-spacing: 0.7rem;
+}
+
+nav > .scoreboard {
+  font-size: 2rem;
+  text-align: end;
+}
+
+.Cards {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3.2rem auto 0 auto;
+  font-weight: bold;
+}
+
+img {
+  margin: 5px;
+  max-width: 265px;
+  max-height: 265px;
+}
+
+.card {
+  color: white;
+  width: 280px;
+  height: 320px;
+  overflow: hidden;
+  background-color: black;
+  font-size: 1.8rem;
+  font-family: 'Teko', sans-serif;
+  margin: 10px;
+  cursor: pointer;
+  padding: 1rem 0;
+}

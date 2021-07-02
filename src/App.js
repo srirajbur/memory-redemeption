@@ -3,7 +3,6 @@ import './App.css';
 import characterCards from './characterCards';
 import Cards from './components/Cards';
 import Navbar from './components/Navbar';
-import ScoreBoard from './components/ScoreBoard';
 
 function App() {
   const [characters, setCharacters] = useState(characterCards);
@@ -63,8 +62,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <ScoreBoard currentScore={currentScore} bestScore={bestScore} />
+      <Navbar currentScore={currentScore} bestScore={bestScore} />
       <Cards handleClick={handleClick} characters={shuffle(characters)} />
     </div>
   );

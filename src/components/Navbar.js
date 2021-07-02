@@ -1,10 +1,14 @@
 import React from 'react';
+import '../App.css';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { currentScore, bestScore } = props;
   return (
     <nav>
-      <div style={{ fontSize: '3rem', marginLeft: '1rem' }}>
-        Memory Redemption
+      <h2>Memory Redemption</h2>
+      <div className="scoreboard">
+        <div>Score: {currentScore}</div>
+        <div>Best Score: {bestScore}</div>
       </div>
     </nav>
   );

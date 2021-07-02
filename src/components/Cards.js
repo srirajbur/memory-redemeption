@@ -1,4 +1,4 @@
-import './Cards.css';
+import '../App.css';
 
 const Cards = (props) => {
   const { characters, handleClick } = props;
