@@ -8,10 +8,7 @@ const Cards = (props) => {
       {characters.map((character) => {
         return (
           <Card
-            key={character.id}
-            id={character.id}
-            name={character.name}
-            img={character.img}
+            character={character}
             handleClick={handleClick}
           />
         );
@@ -21,7 +18,8 @@ const Cards = (props) => {
 };
 
 const Card = (props) => {
-  const { name, img, id, handleClick } = props;
+  const { character, handleClick } = props;
+  const { name, img, id } = character;
 
   function capitalize(string) {
     return string[0].toUpperCase() + string.slice(1);

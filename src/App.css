@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Creepster', cursive;
+
 }
 
 nav {
@@ -25,31 +26,27 @@ nav > .scoreboard {
 }
 
 .Cards {
-  height: 80vh;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 3.2rem auto 0 auto;
-  font-weight: bold;
+  margin: 2rem auto 0 auto;
 }
 
 img {
-  margin: 5px;
-  max-width: 265px;
-  max-height: 265px;
+  max-width: 230px;
+  max-height: 230px;
 }
+
+
 
 .card {
   color: white;
-  width: 280px;
-  height: 320px;
-  overflow: hidden;
   background-color: black;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-family: 'Teko', sans-serif;
-  margin: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
-  padding: 1rem 0;
+  padding: 1rem;
 }
