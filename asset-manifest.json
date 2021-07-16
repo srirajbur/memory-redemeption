@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memory-redemption/static/css/main.9deedbc0.chunk.css",
+    "main.css": "/memory-redemption/static/css/main.05fc46ab.chunk.css",
     "main.js": "/memory-redemption/static/js/main.2ef4688d.chunk.js",
     "main.js.map": "/memory-redemption/static/js/main.2ef4688d.chunk.js.map",
     "runtime-main.js": "/memory-redemption/static/js/runtime-main.d3a20c4a.js",
@@ -8,13 +8,13 @@
     "static/js/2.67703a2a.chunk.js": "/memory-redemption/static/js/2.67703a2a.chunk.js",
     "static/js/2.67703a2a.chunk.js.map": "/memory-redemption/static/js/2.67703a2a.chunk.js.map",
     "index.html": "/memory-redemption/index.html",
-    "static/css/main.9deedbc0.chunk.css.map": "/memory-redemption/static/css/main.9deedbc0.chunk.css.map",
+    "static/css/main.05fc46ab.chunk.css.map": "/memory-redemption/static/css/main.05fc46ab.chunk.css.map",
     "static/js/2.67703a2a.chunk.js.LICENSE.txt": "/memory-redemption/static/js/2.67703a2a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d3a20c4a.js",
     "static/js/2.67703a2a.chunk.js",
-    "static/css/main.9deedbc0.chunk.css",
+    "static/css/main.05fc46ab.chunk.css",
     "static/js/main.2ef4688d.chunk.js"
   ]
 }
